@@ -132,7 +132,6 @@
       
 
   - 设置table的tbody
-
     ```html
   <!DOCTYPE html>
     <html>
@@ -186,8 +185,7 @@
     		</table>
     		总共<span id="sp">0</span>条记录。
     	</body>
-    </html>
-    
+    </html>s
     ```
   
     
