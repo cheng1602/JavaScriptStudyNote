@@ -132,8 +132,9 @@
       
 
   - 设置table的tbody
+
     ```html
-  <!DOCTYPE html>
+    <!DOCTYPE html>
     <html>
     	<head>
     		<meta charset="utf-8">
@@ -185,11 +186,6 @@
     		</table>
     		总共<span id="sp">0</span>条记录。
     	</body>
-    </html>s
-    ```
-  
+    </html>
     
-  
-  
-  
-  
+    ```
