@@ -128,7 +128,64 @@
       </html>
       
       ```
+  - 设置table的tbody
 
+    ```html
+  <!DOCTYPE html>
+    <html>
+    	<head>
+    		<meta charset="utf-8">
+    		<title>设置table的tbody</title>
+    	</head>
+    	<body>
+    		<script type="text/javascript">
+    			//有这些JSON数据
+    			var user = {
+    				"totle": 3,
+    				"users": [{
+    					"id": "01",
+    					"name": "张三"
+    
+    				}, {
+    					"id": "02",
+    					"name": "李四"
+    
+    				}, {
+    					"id": "03",
+    					"name": "王五"
+    				}]
+    			}
+    
+    			//展示到table当中
+    			window.onload = function() {
+    				document.getElementById('btn').onclick = function() {
+    					document.getElementById('sp').innerText = user.totle;
+    					var uu = user.users;
+    					var tab = '';
+    					for (i = 0; i < uu.length; i++) {
+    						tab += '<tr><th>' + uu[i].id + '</th><th>' + uu[i].name + '</th></tr>';
+    					}
+    					document.getElementById('tb').innerHTML = tab;
+    				}
+    			}
+    		</script>
+    
+    		<input type="button" value="查询用户信息" id="btn" />
+    		<h2>用户信息列表</h2>
+    		<table border="1px" width="50%">
+    			<tr>
+    				<th>编号</th>
+    				<th>姓名</th>
+    			</tr>
+    			<tbody id="tb">
+    
+    			</tbody>
+    		</table>
+    		总共<span id="sp">0</span>条记录。
+    	</body>
+    </html>
+    
+    ```
       
 
   
